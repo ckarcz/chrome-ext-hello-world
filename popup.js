@@ -1,3 +1,4 @@
+// change color button in the extension popup
 let changeColorBtn = document.getElementById('changeColorBtn');
 
 // get color item from chrome storage and set changeColorBtn bg color to it.

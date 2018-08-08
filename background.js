@@ -1,5 +1,7 @@
+// default color
 const color = '#3aa757';
 
+// on chrome extension installed...
 chrome.runtime.onInstalled.addListener(function () {
 
     // store color in chrome storage
