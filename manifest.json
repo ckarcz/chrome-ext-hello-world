@@ -10,8 +10,9 @@
         "128": "hello_16x16.png"
     },
     "permissions": [
-        "storage",
-        "declarativeContent"
+        "activeTab",
+        "declarativeContent",
+        "storage"
     ],
     "background": {
         "scripts": [
@@ -20,7 +21,7 @@
         "persistent": false
     },
     "page_action": {
-        "default_popup": "hello.html",
+        "default_popup": "popup.html",
         "default_icon": {
             "16": "hello_16x16.png",
             "32": "hello_16x16.png",
@@ -34,7 +35,7 @@
                 "default": "Ctrl+Shift+F",
                 "mac": "MacCtrl+Shift+F"
             },
-            "description": "Opens extension popup."
+            "description": "Opens extension popup for developer.chroms.com domain."
         }
     }
 }

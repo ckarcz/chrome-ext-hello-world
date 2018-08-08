@@ -1,7 +1,13 @@
+const color = '#3aa757';
+
 chrome.runtime.onInstalled.addListener(function () {
-    chrome.storage.sync.set({ color: '#3aa757' }, function () {
-        console.log('The color is green.');
+
+    // store color in chrome storage
+    chrome.storage.sync.set({ color:  color}, function () {
+        console.log('Set color to ' + color + ' in chrome storage.');
     });
+
+    // conditional page action. extension toolbar button will only be enabled for below host.
     chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
         chrome.declarativeContent.onPageChanged.addRules([{
             conditions: [new chrome.declarativeContent.PageStateMatcher({
@@ -10,4 +16,5 @@ chrome.runtime.onInstalled.addListener(function () {
             actions: [new chrome.declarativeContent.ShowPageAction()]
         }]);
     });
+
 });
