@@ -6,10 +6,10 @@
     "author": "ckarcz",
     "homepage_url": "https://github.com/ckarcz/chrome-ext-hello-world",
     "icons": {
-        "16": "hello_16x16.png",
-        "32": "hello_16x16.png",
-        "48": "hello_16x16.png",
-        "128": "hello_16x16.png"
+        "16": "common/img/hello_16x16.png",
+        "32": "common/img/hello_16x16.png",
+        "48": "common/img/hello_16x16.png",
+        "128": "common/img/hello_16x16.png"
     },
     "permissions": [
         "activeTab",
@@ -18,21 +18,21 @@
     ],
     "background": {
         "scripts": [
-            "background.js"
+            "background/js/background.js"
         ],
         "persistent": false
     },
     "options_ui": {
-        "page": "options.html",
+        "page": "options/html/options.html",
         "open_in_tab": false
     },
     "page_action": {
-        "default_popup": "popup.html",
+        "default_popup": "popup/html/popup.html",
         "default_icon": {
-            "16": "hello_16x16.png",
-            "32": "hello_16x16.png",
-            "48": "hello_16x16.png",
-            "128": "hello_16x16.png"
+            "16": "common/img/hello_16x16.png",
+            "32": "common/img/hello_16x16.png",
+            "48": "common/img/hello_16x16.png",
+            "128": "common/img/hello_16x16.png"
         }
     },
     "commands": {
