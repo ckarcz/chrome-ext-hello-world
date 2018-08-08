@@ -1,0 +1,1 @@
+This is a basic chrome extension following the [Get Started Tuturial](https://developer.chrome.com/extensions/getstarted).
