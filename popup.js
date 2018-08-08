@@ -16,3 +16,15 @@ changeColorBtn.onclick = function (element) {
             { code: 'document.body.style.backgroundColor = "' + color + '";' });
     });
 };
+
+// options button in the extension popup
+let optionsBtn = document.getElementById('optionsBtn');
+
+// on optionsBtn click, open extension options if not open already
+optionsBtn.onclick = function () {
+    if (chrome.runtime.openOptionsPage) {
+        chrome.runtime.openOptionsPage();
+    } else {
+        window.open(chrome.runtime.getURL('options.html'));
+    }
+};
